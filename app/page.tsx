@@ -28,23 +28,28 @@ export default function Home() {
 
       <section className="hero" id="top">
         <div className="hero-copy">
-          <p className="eyebrow">Practical systems for owner-led businesses</p>
-          <h1>Find what’s being missed. <em>Fix what matters.</em></h1>
-          <p className="hero-lede">Rabbit River helps good businesses recover lost opportunities, improve customer follow-up, and put useful AI and technology to work—without unnecessary complexity.</p>
+          <p className="eyebrow">Sales systems for owner-led businesses</p>
+          <h1>Most sales aren’t lost. <em>They’re mismanaged.</em></h1>
+          <p className="hero-lede"><strong>Before you spend more money finding leads, let’s stop the good ones from slipping away.</strong> Rabbit River builds practical sales systems, automations, and tools that help businesses respond faster, follow up better, and see what’s actually happening.</p>
           <div className="hero-actions">
-            <a className="button" href="mailto:kevin@rabbitriversystems.com?subject=Smart%20Sales%20Scan">Request a Smart Sales Scan <ArrowRight size={18} /></a>
-            <a className="text-link" href="#approach">See how it works <span>↓</span></a>
+            <a className="button" href="mailto:kevin@rabbitriversystems.com?subject=Missed%20opportunities">Find what’s being missed <ArrowRight size={18} /></a>
+            <a className="text-link" href="#approach">What we look for <span>↓</span></a>
           </div>
           <div className="trust-line"><span>Founder-led</span><i /><span>40+ years across technology &amp; sales</span><i /><span>Pacific Northwest</span></div>
         </div>
 
-        <aside className="signal-card" aria-label="Common signs of missed opportunity">
-          <div className="card-topline"><span>Signals we look for</span><span className="live-dot">In plain sight</span></div>
-          <h2>Good businesses lose opportunities in ordinary places.</h2>
+        <aside className="signal-card" aria-label="How sales opportunities slip away">
+          <div className="card-topline"><span>Opportunity path / 01</span><span className="live-dot">Diagnostic</span></div>
+          <h2>The lead arrived. What happened next?</h2>
+          <div className="opportunity-flow" aria-label="Lead moves from inquiry to response to follow-up to decision">
+            <div className="flow-step is-active"><span>01</span><b>Inquiry</b><small>Opportunity created</small></div>
+            <div className="flow-step is-risk"><span>02</span><b>Response</b><small>Delay creates risk</small></div>
+            <div className="flow-step is-lost"><span>03</span><b>Follow-up</b><small>Visibility lost</small></div>
+            <div className="flow-step"><span>04</span><b>Decision</b><small>Outcome unknown</small></div>
+          </div>
           <ul>{problems.map((problem) => <li key={problem}><Check size={16} />{problem}</li>)}</ul>
-          <p>Most are fixable without rebuilding the whole business.</p>
+          <p>The problem is often not demand. It is what happens between interest and action.</p>
         </aside>
-        <div className="river-lines" aria-hidden="true"><span /><span /><span /></div>
       </section>
 
       <section className="approach" id="approach">
