@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Is your business ready for agentic search? — Rabbit River Systems</title>
+<meta name="description" content="More and more, the first thing that looks up your business isn't a person. The Front Door Check shows you what customers and AI assistants actually find — in about two minutes, free." />
+<meta name="robots" content="noindex" />
+<link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+<style>
+:root{
+  --paper:#F3F0E8; --clean:#FBF9F4; --carbon:#171B19; --river:#173D35;
+  --slate:#66706B; --rule:#D8D6CE; --orange:#F06A2A;
+  --serif:Georgia,'Iowan Old Style','Times New Roman',serif;
+  --sans:-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif;
+  --mono:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;
+}
+*{box-sizing:border-box}
+body{margin:0;background:var(--paper);color:var(--carbon);font-family:var(--sans);line-height:1.6;-webkit-font-smoothing:antialiased}
+a{color:inherit}
+.wrap{max-width:1180px;margin:0 auto;padding:0 clamp(20px,5vw,64px)}
+.mono{font-family:var(--mono);font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:var(--slate)}
+h1,h2,h3,p{margin-top:0}
+.draft{background:var(--carbon);color:var(--clean);text-align:center;padding:9px 16px;font-family:var(--mono);font-size:11px;letter-spacing:.12em;text-transform:uppercase}
+.draft b{color:var(--orange)}
+
+/* running head */
+.runhead{border-bottom:1px solid var(--rule)}
+.runhead .wrap{display:flex;align-items:baseline;justify-content:space-between;gap:24px;padding:14px 0}
+.doc{display:flex;gap:26px;align-items:baseline}
+.wordmark{font-family:var(--serif);font-size:19px;letter-spacing:-.01em}
+.wordmark span{color:var(--river);font-style:italic}
+.runhead nav{display:flex;gap:22px}
+.runhead nav a{text-decoration:none;border-bottom:1px solid transparent;padding-bottom:2px}
+.runhead nav a:hover{border-color:var(--orange)}
+
+/* hero */
+.hero{padding:clamp(48px,7vw,100px) 0 0}
+.kicker{display:flex;align-items:center;gap:14px;margin-bottom:28px}
+.kicker .bar{height:1px;width:56px;background:var(--orange)}
+h1{font-family:var(--serif);font-weight:400;font-size:clamp(44px,7.2vw,98px);line-height:.94;letter-spacing:-.035em;max-width:15ch;margin-bottom:30px}
+h1 em{font-style:italic;color:var(--river);display:block}
+.hero-grid{display:grid;grid-template-columns:minmax(0,1fr) 300px;gap:clamp(32px,6vw,84px);align-items:start;padding-bottom:54px}
+.lede{font-size:19px;line-height:1.65;max-width:58ch}
+.aside-note{border-left:2px solid var(--orange);padding-left:16px}
+.aside-note p{font-family:var(--mono);font-size:12px;line-height:1.7;color:var(--slate);margin:8px 0 0;text-transform:none;letter-spacing:0}
+.actions{display:flex;align-items:center;gap:24px;margin-top:32px;flex-wrap:wrap}
+.btn{background:var(--orange);color:#fff;font-weight:700;font-size:13px;letter-spacing:.06em;text-transform:uppercase;
+  padding:16px 26px;border-radius:2px;display:inline-block;text-decoration:none;border:0;cursor:pointer;font-family:var(--sans)}
+.btn:hover{background:#d85b1f}
+.btn.dark{background:var(--carbon)}.btn.dark:hover{background:var(--river)}
+.micro{font-size:13px;color:var(--slate)}
+
+/* stages */
+.sec{padding:clamp(56px,7vw,96px) 0}
+.sec--cream{background:var(--clean);border-top:1px solid var(--rule);border-bottom:1px solid var(--rule)}
+.sec-grid{display:grid;grid-template-columns:120px minmax(0,1fr);gap:clamp(20px,4vw,56px);align-items:start}
+.marg .num{font-family:var(--serif);font-size:40px;color:var(--rule);line-height:1;display:block;margin-bottom:6px}
+h2.sec-title{font-family:var(--serif);font-weight:400;font-size:clamp(30px,4vw,50px);line-height:1.08;letter-spacing:-.03em;margin-bottom:18px;max-width:20ch}
+.intro{font-size:17.5px;max-width:62ch;color:#3f4a46}
+.stages{list-style:none;padding:0;margin:34px 0 0;border-top:1px solid var(--rule)}
+.stages li{border-bottom:1px solid var(--rule);padding:22px 0;display:grid;grid-template-columns:58px minmax(0,1fr);gap:18px}
+.stages .n{font-family:var(--mono);font-size:11px;letter-spacing:.12em;color:var(--orange);padding-top:5px}
+.stages h3{font-family:var(--serif);font-weight:400;font-size:23px;margin:0 0 7px;letter-spacing:-.015em}
+.stages p{margin:0;color:#4b5551;font-size:15.5px;max-width:66ch}
+.stages li.is-new{background:linear-gradient(90deg,rgba(240,106,42,.07),transparent 60%)}
+.tag{display:inline-block;font-family:var(--mono);font-size:9.5px;letter-spacing:.14em;text-transform:uppercase;
+  color:var(--orange);border:1px solid var(--orange);border-radius:2px;padding:2px 7px;margin-left:10px;vertical-align:3px}
+.turn{margin-top:30px;font-family:var(--serif);font-style:italic;font-size:19px;color:var(--river);max-width:60ch}
+
+/* the check */
+.check{background:var(--carbon);color:var(--clean);padding:clamp(56px,8vw,104px) 0}
+.check h2{font-family:var(--serif);font-weight:400;font-size:clamp(32px,5vw,64px);line-height:1.04;letter-spacing:-.035em;margin-bottom:22px;max-width:18ch}
+.check .mono{color:#7f8c86}
+.check .lede2{color:#b8c3bd;font-size:17.5px;max-width:58ch;margin-bottom:14px}
+.note-box{border-left:2px solid var(--orange);padding:2px 0 2px 18px;margin:30px 0 40px;max-width:62ch}
+.note-box p{margin:0;color:#c8d2cc;font-size:16px;line-height:1.7}
+.q{border-top:1px solid #2f3633;padding:24px 0}
+.q:last-of-type{border-bottom:1px solid #2f3633}
+.q .qn{font-family:var(--mono);font-size:10px;letter-spacing:.16em;color:#6f7b76;display:block;margin-bottom:8px}
+.q h3{font-family:var(--serif);font-weight:400;font-size:22px;margin:0 0 6px;letter-spacing:-.015em}
+.q .do{color:#9daba5;font-size:14.5px;margin:0 0 14px}
+.opts{display:flex;flex-wrap:wrap;gap:9px}
+.opts label{display:inline-flex;align-items:center;gap:8px;border:1px solid #3c443f;border-radius:2px;
+  padding:9px 13px;font-size:14px;cursor:pointer;color:#cfd8d3;transition:border-color .15s,background .15s}
+.opts label:hover{border-color:#5c665f}
+.opts input{accent-color:var(--orange);margin:0}
+.opts input:checked+span{color:#fff;font-weight:600}
+.opts label:has(input:checked){border-color:var(--orange);background:rgba(240,106,42,.1)}
+.runbtn{margin-top:34px;display:flex;align-items:center;gap:20px;flex-wrap:wrap}
+.verdict{margin-top:34px;border:1px solid #39413d;border-left:3px solid var(--orange);padding:26px;display:none}
+.verdict.show{display:block}
+.verdict .mono{color:var(--orange)}
+.verdict h3{font-family:var(--serif);font-weight:400;font-size:clamp(24px,3vw,34px);margin:10px 0 12px;letter-spacing:-.02em;color:var(--clean)}
+.verdict p{color:#c3cdc7;margin:0 0 12px;font-size:16px;max-width:60ch}
+.verdict .fix{margin-top:18px;padding-top:16px;border-top:1px solid #39413d}
+.verdict .fix b{color:var(--clean)}
+
+/* next step */
+.next .sec-grid{align-items:center}
+.next h2{font-family:var(--serif);font-weight:400;font-size:clamp(28px,3.6vw,44px);letter-spacing:-.03em;line-height:1.08;margin-bottom:14px;max-width:22ch}
+
+/* offer placeholder */
+.offer{border:1px dashed var(--rule);padding:clamp(24px,4vw,40px);background:var(--clean)}
+.offer .ph{font-family:var(--mono);font-size:12px;color:var(--orange);letter-spacing:.06em}
+.offer ul{list-style:none;padding:0;margin:18px 0 0}
+.offer li{padding:11px 0;border-top:1px solid var(--rule);display:grid;grid-template-columns:170px 1fr;gap:14px;font-size:15.5px}
+.offer li b{font-weight:600}
+
+/* close */
+.close-grid{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:40px;align-items:end;border-top:2px solid var(--carbon);padding-top:32px}
+.close h2{font-family:var(--serif);font-weight:400;font-size:clamp(30px,4.4vw,54px);letter-spacing:-.03em;line-height:1.05;margin:0;max-width:16ch}
+footer{border-top:1px solid var(--rule);padding:26px 0 44px;margin-top:60px}
+footer .wrap{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap}
+
+@media(max-width:900px){
+  .hero-grid,.sec-grid,.close-grid{grid-template-columns:1fr}
+  .marg{display:flex;gap:12px;align-items:baseline}
+  .marg .num{font-size:26px;margin:0}
+  .runhead nav{display:none}
+  .offer li{grid-template-columns:1fr;gap:2px}
+}
+@media (prefers-reduced-motion:reduce){*{transition:none!important}}
+</style>
+</head>
+<body>
+
+<div class="draft">Draft <b>v2</b> — not linked from the live site · <span style="opacity:.6">for Kevin's review</span></div>
+
+<header class="runhead"><div class="wrap">
+  <div class="doc">
+    <span class="wordmark">Rabbit River <span>Systems</span></span>
+    <span class="mono">Field Note 01 · Sales</span>
+  </div>
+  <nav class="mono"><a href="#stages">The four stages</a><a href="#check">The check</a><a href="#about">About</a></nav>
+</div></header>
+
+<!-- HERO -->
+<section class="hero"><div class="wrap">
+  <div class="kicker"><span class="bar"></span><span class="mono">For owner-led service businesses</span></div>
+  <h1>Most sales aren't lost. <em>They're mismanaged.</em></h1>
+  <div class="hero-grid">
+    <div>
+      <p class="lede">Not by careless people. By busy ones. Somewhere between the first call and the final follow-up, work you already earned quietly slips away — and it almost never looks like a lost sale. It looks like a quote nobody ever answered.</p>
+      <p class="lede" style="margin-top:18px">It starts earlier than most owners think: with what a stranger — or an AI assistant — finds when they go looking for you.</p>
+      <div class="actions">
+        <a class="btn" href="#check">Is your business ready for agentic search?</a>
+        <span class="micro">2 minutes · nothing to install · no signup</span>
+      </div>
+    </div>
+    <div class="aside-note">
+      <span class="mono">Field note</span>
+      <p>Most engagements start with one question: what actually happens after somebody asks you for an estimate? Almost nobody knows the honest answer.</p>
+    </div>
+  </div>
+</div></section>
+
+<!-- STAGES -->
+<section class="sec sec--cream" id="stages"><div class="wrap"><div class="sec-grid">
+  <div class="marg"><span class="num">01</span><span class="mono">Recognition</span></div>
+  <div>
+    <h2 class="sec-title">Mismanaged doesn't mean careless. It means unowned.</h2>
+    <p class="intro">Sales don't vanish all at once. They leak at five predictable points. Most businesses are solid at four of them and quietly bleeding at one — and it's rarely the one they'd guess.</p>
+    <ul class="stages">
+      <li class="is-new">
+        <span class="n">00</span>
+        <div>
+          <h3>Representation <span class="tag">New</span></h3>
+          <p>You can't manage what you can't see — and right now you probably can't see what a machine is telling people about you. Your hours, your service area, whether you're even mentioned when somebody asks an assistant for a recommendation.</p>
+        </div>
+      </li>
+      <li><span class="n">01</span><div><h3>Prospecting</h3><p>You're spending your best hours on people who were never going to buy. Every call gets treated the same, so the serious ones wait while you write a careful quote for somebody who was only curious.</p></div></li>
+      <li><span class="n">02</span><div><h3>Roles</h3><p>Everybody sells a little. Nobody owns it. Whoever's closest answers the phone, follow-up happens if someone remembers, and the owner is the sales department, the estimator and half the crew.</p></div></li>
+      <li><span class="n">03</span><div><h3>Pipeline</h3><p>You can't see what's actually open. Quotes live in your texts, your email and your head — and nothing tells you which ones have gone quiet.</p></div></li>
+      <li><span class="n">04</span><div><h3>Closing</h3><p>The quote went out. Then nothing. There's no second touch unless the customer calls, and "they went quiet" has become a normal outcome. Nobody said no — they just stopped.</p></div></li>
+    </ul>
+    <p class="turn">None of that is a demand problem. It's a handling problem — and handling problems are fixable, usually without spending another dollar on leads.</p>
+  </div>
+</div></div></section>
+
+<!-- THE CHECK -->
+<section class="check" id="check"><div class="wrap">
+  <span class="mono">Stage 00 · The Front Door Check</span>
+  <h2>Is your business ready for agentic search?</h2>
+  <p class="lede2">Search changed. People still Google you — but increasingly they ask an assistant instead, and the assistant answers on their behalf. It can only repeat what it finds.</p>
+  <div class="note-box">
+    <p>This isn't a scan you wait on. It's six things you can check yourself, right now, in about two minutes. Nothing to install, no account, and I don't need access to anything of yours.</p>
+  </div>
+
+  <form id="fdc">
+    <div class="q">
+      <span class="qn">Check 01</span>
+      <h3>Ask an assistant to recommend somebody like you.</h3>
+      <p class="do">Open ChatGPT, Gemini or Copilot and ask: <em>"Recommend a [your trade] near [your town]."</em></p>
+      <div class="opts">
+        <label><input type="radio" name="q1" value="0"><span>I was named first or near the top</span></label>
+        <label><input type="radio" name="q1" value="1"><span>Mentioned somewhere</span></label>
+        <label><input type="radio" name="q1" value="2"><span>Not mentioned — only competitors</span></label>
+        <label><input type="radio" name="q1" value="2"><span>Haven't tried it</span></label>
+      </div>
+    </div>
+
+    <div class="q">
+      <span class="qn">Check 02</span>
+      <h3>Search your own business name.</h3>
+      <p class="do">Is the top result yours, current, and correct?</p>
+      <div class="opts">
+        <label><input type="radio" name="q2" value="0"><span>Yes — all three</span></label>
+        <label><input type="radio" name="q2" value="1"><span>Mostly right</span></label>
+        <label><input type="radio" name="q2" value="2"><span>Something's out of date</span></label>
+        <label><input type="radio" name="q2" value="2"><span>Hard to tell</span></label>
+      </div>
+    </div>
+
+    <div class="q">
+      <span class="qn">Check 03</span>
+      <h3>Do your details agree with each other?</h3>
+      <p class="do">Hours, phone and service area — on your website, your map listing, and anywhere else you're listed.</p>
+      <div class="opts">
+        <label><input type="radio" name="q3" value="0"><span>They all match</span></label>
+        <label><input type="radio" name="q3" value="1"><span>Mostly</span></label>
+        <label><input type="radio" name="q3" value="2"><span>They don't match</span></label>
+        <label><input type="radio" name="q3" value="2"><span>I don't know</span></label>
+      </div>
+    </div>
+
+    <div class="q">
+      <span class="qn">Check 04</span>
+      <h3>The five-second test.</h3>
+      <p class="do">Open your own homepage on a phone. Could a stranger tell what you do and where you work, in five seconds?</p>
+      <div class="opts">
+        <label><input type="radio" name="q4" value="0"><span>Yes, immediately</span></label>
+        <label><input type="radio" name="q4" value="1"><span>Sort of</span></label>
+        <label><input type="radio" name="q4" value="2"><span>No</span></label>
+      </div>
+    </div>
+
+    <div class="q">
+      <span class="qn">Check 05</span>
+      <h3>Try to contact yourself.</h3>
+      <p class="do">From that same phone, one-handed: how many taps to reach a human or ask for an estimate?</p>
+      <div class="opts">
+        <label><input type="radio" name="q5" value="0"><span>One</span></label>
+        <label><input type="radio" name="q5" value="1"><span>Two or three</span></label>
+        <label><input type="radio" name="q5" value="2"><span>More than that</span></label>
+        <label><input type="radio" name="q5" value="2"><span>Couldn't really find it</span></label>
+      </div>
+    </div>
+
+    <div class="q">
+      <span class="qn">Check 06</span>
+      <h3>Read your three most recent reviews.</h3>
+      <p class="do">Did anybody reply to them?</p>
+      <div class="opts">
+        <label><input type="radio" name="q6" value="0"><span>All of them</span></label>
+        <label><input type="radio" name="q6" value="1"><span>Some</span></label>
+        <label><input type="radio" name="q6" value="2"><span>None</span></label>
+        <label><input type="radio" name="q6" value="2"><span>No recent reviews</span></label>
+      </div>
+    </div>
+
+    <div class="runbtn">
+      <button class="btn" type="button" id="run">Show my verdict</button>
+      <span class="micro" style="color:#8e9a94">Nothing is sent anywhere. This runs in your browser.</span>
+    </div>
+  </form>
+
+  <div class="verdict" id="verdict" role="status" aria-live="polite">
+    <span class="mono" id="v-label">Verdict</span>
+    <h3 id="v-title"></h3>
+    <p id="v-body"></p>
+    <div class="fix"><b>Where I'd start:</b> <span id="v-fix"></span></div>
+  </div>
+</div></section>
+
+<!-- NEXT STEP -->
+<section class="sec next"><div class="wrap"><div class="sec-grid">
+  <div class="marg"><span class="num">02</span><span class="mono">The harder part</span></div>
+  <div>
+    <h2>The front door is the easy half.</h2>
+    <p class="intro">Tidying up what people find gets you more first calls. It still can't tell you what happened to the twelve quotes you sent last month — and that's usually where the money actually went. That's stages 03 and 04, and it's the next thing I'm building.</p>
+  </div>
+</div></div></section>
+
+<!-- OFFER (placeholder) -->
+<section class="sec sec--cream"><div class="wrap"><div class="sec-grid">
+  <div class="marg"><span class="num">03</span><span class="mono">If you want the fix</span></div>
+  <div>
+    <h2 class="sec-title">You can fix most of this yourself. Some people would rather not.</h2>
+    <div class="offer">
+      <span class="ph">// placeholder — not published yet</span>
+      <ul>
+        <li><b>What it is</b><span>[the productized fix]</span></li>
+        <li><b>What it costs</b><span>[price]</span></li>
+        <li><b>How long</b><span>[timeline]</span></li>
+        <li><b>What I need from you</b><span>[minimal ask]</span></li>
+      </ul>
+    </div>
+  </div>
+</div></div></section>
+
+<!-- ABOUT -->
+<section class="sec" id="about"><div class="wrap"><div class="sec-grid">
+  <div class="marg"><span class="num">04</span><span class="mono">Who's behind it</span></div>
+  <div>
+    <h2 class="sec-title">Built by someone who has actually sold things.</h2>
+    <p class="intro">Kevin Butler spent more than 25 years carrying a sales quota — enterprise, government and small business — after starting out in Navy electronics and systems engineering. Rabbit River Systems is where that turns into <strong>tools instead of advice</strong>.</p>
+    <p class="mono" style="margin-top:20px">Proud U.S. Navy veteran · Pacific Northwest</p>
+  </div>
+</div></div></section>
+
+<!-- CLOSE -->
+<section class="sec"><div class="wrap"><div class="close-grid">
+  <div>
+    <span class="mono">Start with what everyone else can already see</span>
+    <h2 style="margin-top:12px">Check the front door first.</h2>
+    <p class="intro" style="margin-top:14px">Two minutes, costs nothing. Worst case, you find out you're in better shape than you thought.</p>
+  </div>
+  <a class="btn dark" href="#check">Run the check</a>
+</div></div></section>
+
+<footer><div class="wrap">
+  <span class="mono">Rabbit River Systems · Pacific Northwest</span>
+  <span class="mono">© 2026</span>
+</div></footer>
+
+<script>
+(function(){
+  var BANDS = [
+    { max:2,  title:"Your front door is in good shape.",
+      body:"A stranger — or an assistant answering on their behalf — can find you, understand what you do, and reach you without effort. That's rarer than you'd think. The leak, if there is one, is further down the line.",
+      fix:"Nothing urgent here. Skip ahead to what happens after the quote goes out — that's where most businesses like yours are actually losing work." },
+    { max:6,  title:"Mostly solid, with one gap worth closing.",
+      body:"Most of what people find is right. But there's at least one place where the story breaks down — and it's usually the same one that quietly costs you calls you never hear about.",
+      fix:"Fix the single worst answer above first. One inconsistency — wrong hours, a dead contact path — undoes a lot of good work everywhere else." },
+    { max:9,  title:"You're leaking at the front door.",
+      body:"Enough is stale, scattered or hard to find that some people who wanted to hire you gave up before they reached you. You'd never see it happen; it just shows up as a quieter phone.",
+      fix:"Start with your details agreeing across every place you're listed — hours, phone, service area. It's dull, it's free, and it fixes what both people and assistants repeat about you." },
+    { max:99, title:"Right now, the machines can't represent you properly.",
+      body:"If an assistant were asked to recommend somebody like you today, it would either skip you or repeat something out of date. That isn't a marketing problem — it's a plumbing problem, and it's very fixable.",
+      fix:"Claim and correct your listing first, then make your homepage answer 'what do you do and where' above the fold. Those two moves fix most of it in an afternoon." }
+  ];
+  document.getElementById('run').addEventListener('click', function(){
+    var f=document.getElementById('fdc'), total=0, answered=0;
+    for(var i=1;i<=6;i++){
+      var sel=f.querySelector('input[name="q'+i+'"]:checked');
+      if(sel){ answered++; total+=parseInt(sel.value,10); }
+    }
+    var v=document.getElementById('verdict');
+    if(answered<4){
+      document.getElementById('v-label').textContent='Not enough answers';
+      document.getElementById('v-title').textContent='Answer at least four checks.';
+      document.getElementById('v-body').textContent='Each one takes a few seconds and you can do them all from your phone. The point is to look — most of the value is in what you notice while checking.';
+      document.getElementById('v-fix').textContent='Run checks 01 and 03 first if you only do two.';
+      v.classList.add('show'); v.scrollIntoView({behavior:'smooth',block:'center'}); return;
+    }
+    var scaled = Math.round(total * (6/answered));
+    var band = BANDS.find(function(b){ return scaled<=b.max; });
+    document.getElementById('v-label').textContent='Verdict · Stage 00';
+    document.getElementById('v-title').textContent=band.title;
+    document.getElementById('v-body').textContent=band.body;
+    document.getElementById('v-fix').textContent=band.fix;
+    v.classList.add('show');
+    v.scrollIntoView({behavior:'smooth',block:'center'});
+  });
+})();
+</script>
+</body>
+</html>
