@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>The 20-Minute AI Hygiene Check — Rabbit River Systems</title>
+<meta name="description" content="Twenty minutes, four places to look, one page of answers. Find out what AI tools can actually do on your behalf — and turn off what shouldn't be on." />
+<link rel="icon" href="favicon.svg" type="image/svg+xml" />
+<link rel="canonical" href="https://rabbitriversystems.com/ai-hygiene-check.html" />
+<style>
+:root{
+  --paper:#F3F0E8; --clean:#FBF9F4; --carbon:#141816; --ink:#171B19; --river:#173D35;
+  --slate:#66706B; --rule:#D8D6CE; --orange:#F06A2A; --orange-d:#D2561B;
+  --serif:Georgia,'Iowan Old Style',serif;
+  --sans:-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif;
+  --mono:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;
+}
+*{box-sizing:border-box}
+body{margin:0;background:var(--paper);color:var(--ink);font-family:var(--sans);line-height:1.5;-webkit-font-smoothing:antialiased}
+h1,h2,h3,h4,p,ul,ol,table{margin:0}
+a{color:var(--orange-d)}
+.sheet{max-width:860px;margin:0 auto;background:#fff;padding:clamp(24px,4vw,52px)}
+.wrap{max-width:1180px;margin:0 auto;padding:0 clamp(20px,5vw,64px)}
+
+.nav{background:var(--carbon);color:var(--clean)}
+.nav .wrap{display:flex;align-items:center;justify-content:space-between;gap:20px;min-height:60px;padding-top:10px;padding-bottom:10px}
+.brand{display:flex;align-items:center;gap:10px;text-decoration:none;color:var(--clean)}
+.brand svg{width:22px;height:22px;flex:none}
+.brand b{font-family:var(--serif);font-weight:400;font-size:16px}
+.brand b i{font-style:italic;color:#7fd6c4}
+.navlinks{display:flex;align-items:center;gap:20px;font-size:14px}
+.navlinks a{text-decoration:none;color:#c8d2cd}
+.navlinks a:hover{color:#fff}
+
+.eyebrow{font-family:var(--mono);font-size:10px;letter-spacing:.17em;text-transform:uppercase;color:var(--orange)}
+h1{font-family:var(--serif);font-weight:400;font-size:clamp(30px,4.2vw,46px);line-height:1.02;letter-spacing:-.035em;margin:10px 0 0}
+.promise{margin-top:14px;font-size:17px;color:#3b4541;max-width:60ch}
+.deliverable{margin-top:18px;border-left:3px solid var(--orange);padding:10px 0 10px 18px;font-size:16px;max-width:62ch}
+.deliverable b{display:block;font-family:var(--mono);font-size:10px;letter-spacing:.15em;text-transform:uppercase;color:var(--slate);margin-bottom:5px;font-weight:400}
+
+h2{font-family:var(--serif);font-weight:400;font-size:23px;letter-spacing:-.02em;margin:34px 0 4px;padding-bottom:7px;border-bottom:2px solid var(--ink)}
+h2 .n{font-family:var(--mono);font-size:11px;letter-spacing:.14em;color:var(--orange);margin-right:10px;vertical-align:2px}
+.sub{font-size:14.5px;color:var(--slate);margin:8px 0 14px;max-width:70ch}
+
+table{border-collapse:collapse;width:100%;font-size:14px;margin-top:10px}
+th{text-align:left;font-family:var(--mono);font-size:9.5px;letter-spacing:.13em;text-transform:uppercase;color:var(--slate);
+   font-weight:400;border-bottom:1px solid var(--ink);padding:0 8px 6px 0;vertical-align:bottom}
+td{border-bottom:1px solid var(--rule);padding:7px 8px 7px 0;vertical-align:top}
+td.lvl{font-family:var(--mono);font-size:12px;color:var(--orange-d);white-space:nowrap}
+tr.hi td{background:rgba(240,106,42,.07)}
+
+.places{display:grid;grid-template-columns:1fr 1fr;gap:0 28px;margin-top:12px}
+.place{border-top:1px solid var(--rule);padding:11px 0}
+.place h3{font-size:15.5px;font-weight:600;margin-bottom:3px}
+.place h3 span{font-family:var(--mono);font-size:11px;color:var(--orange);margin-right:7px}
+.place p{font-size:13.5px;color:#4a544f}
+
+ol.q{margin:12px 0 0;padding-left:0;list-style:none;counter-reset:q}
+ol.q li{counter-increment:q;position:relative;padding:7px 0 7px 30px;border-bottom:1px solid var(--rule);font-size:14.5px}
+ol.q li:before{content:counter(q);position:absolute;left:0;top:7px;font-family:var(--mono);font-size:11px;color:var(--orange)}
+ol.q li b{font-weight:600}
+ol.q li span{color:var(--slate)}
+
+.ws td{height:30px;border-bottom:1px solid #c9c7bf}
+.ws th{padding-bottom:7px}
+.ws td:first-child{border-left:0}
+
+.flags{list-style:none;padding:0;margin:12px 0 0;columns:2;column-gap:28px}
+.flags li{font-size:13.5px;padding:5px 0 5px 18px;position:relative;break-inside:avoid;color:#3b4541}
+.flags li:before{content:'';position:absolute;left:0;top:12px;width:8px;height:2px;background:var(--orange)}
+
+.box{background:var(--clean);border:1px solid var(--rule);padding:16px 18px;margin-top:16px}
+.box h4{font-family:var(--mono);font-size:10px;letter-spacing:.15em;text-transform:uppercase;color:var(--slate);margin-bottom:7px;font-weight:400}
+.box p{font-size:13.5px;color:#3b4541}
+
+.close{margin-top:34px;border-top:2px solid var(--ink);padding-top:18px;display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap;align-items:flex-start}
+.close p{font-size:14.5px;color:#3b4541;max-width:46ch}
+.close .who{font-family:var(--serif);font-size:19px;letter-spacing:-.01em;margin-bottom:5px}
+.close a{font-weight:600}
+.fine{margin-top:20px;font-size:11.5px;color:var(--slate);line-height:1.5}
+
+.printbar{background:var(--clean);border-bottom:1px solid var(--rule);padding:10px 0;font-size:13.5px;color:var(--slate)}
+.printbar .wrap{display:flex;justify-content:space-between;gap:14px;flex-wrap:wrap;align-items:center}
+.pbtn{background:none;border:1px solid var(--slate);color:var(--ink);font:inherit;padding:6px 14px;cursor:pointer}
+.pbtn:hover{border-color:var(--orange);color:var(--orange-d)}
+
+@media(max-width:700px){ .places{grid-template-columns:1fr} .flags{columns:1} }
+@media print{
+  @page{margin:14mm}
+  body{background:#fff;font-size:10pt;line-height:1.38}
+  .nav,.printbar,.noprint{display:none!important}
+  .sheet{max-width:none;padding:0}
+  h1{font-size:26pt}
+  h2{font-size:14pt;margin:16pt 0 3pt;break-after:avoid}
+  .promise{font-size:11pt}
+  table,.box,.place,.close,.deliverable{break-inside:avoid}
+  a{color:#000;text-decoration:none}
+  .brk{break-before:page}
+}
+</style>
+</head>
+<body>
+
+<nav class="nav"><div class="wrap">
+  <a class="brand" href="index.html">
+    <svg viewBox="0 0 24 24" fill="none"><path d="M2 15c3-2.5 6-2.5 9 0s6 2.5 9 0" stroke="#7fd6c4" stroke-width="1.8" stroke-linecap="round"/><path d="M2 10c3-2.5 6-2.5 9 0s6 2.5 9 0" stroke="#F06A2A" stroke-width="1.8" stroke-linecap="round"/></svg>
+    <b>Rabbit River <i>Systems</i></b>
+  </a>
+  <div class="navlinks">
+    <a href="access-is-authority.html">The full briefing</a>
+    <a href="book.html">Book 20 minutes</a>
+  </div>
+</div></nav>
+
+<div class="printbar"><div class="wrap">
+  <span>One page. Print it, fill it in, keep it.</span>
+  <button class="pbtn" onclick="window.print()">Print or save as PDF</button>
+</div></div>
+
+<div class="sheet">
+
+  <span class="eyebrow">Rabbit River Systems · Access Is Authority</span>
+  <h1>The 20-Minute AI&nbsp;Hygiene Check</h1>
+  <p class="promise">AI tools increasingly do more than answer questions. They read your information, change records, send messages, and act through other systems. This is a short, deliberate look at what you've allowed — and what you'd rather not have allowed.</p>
+
+  <div class="deliverable">
+    <b>When you're done, you'll have</b>
+    A working inventory of the AI tools and connections you can identify — plus at least one thing you're going to review, reduce, or turn off.
+  </div>
+
+  <h2><span class="n">01</span>The idea</h2>
+  <p class="sub">Access is authority. The more a system can affect people, data, money, or customers, the more deliberately that authority should be granted. Not every connection deserves the same trust, so it helps to have a scale.</p>
+
+  <table>
+    <tr><th style="width:170px">Level</th><th style="width:auto">What it means</th><th style="width:33%">Typical example</th></tr>
+    <tr><td class="lvl">1 · Read</td><td>Can view, cannot change.</td><td>Summarize documents, search files</td></tr>
+    <tr><td class="lvl">2 · Draft</td><td>Prepares an action; a person decides.</td><td>Draft an email or proposal</td></tr>
+    <tr><td class="lvl">3 · Write</td><td>Changes internal information.</td><td>Update a record, edit a file</td></tr>
+    <tr class="hi"><td class="lvl">4 · Send / Publish</td><td>Reaches the outside world.</td><td>Email a customer, post publicly</td></tr>
+    <tr class="hi"><td class="lvl">5 · Delete / Spend</td><td>Hard to reverse.</td><td>Delete records, buy things, run code</td></tr>
+    <tr class="hi"><td class="lvl">6 · Authorize</td><td>Grants authority to others.</td><td>Create logins, approve payments, start other automations</td></tr>
+  </table>
+  <p class="sub" style="margin-top:9px">Levels 4 through 6 are where a person should usually still be in the loop.</p>
+
+  <h2><span class="n">02</span>Four places to look</h2>
+  <p class="sub">Don't try to map everything. In twenty minutes, these four cover the most ground. Look for wording like <b>Connected apps</b>, <b>Third-party access</b>, <b>Authorized applications</b>, <b>Integrations</b>, <b>Linked accounts</b>, or <b>App permissions</b> — usually under Security, Privacy, Account, or Admin.</p>
+
+  <div class="places">
+    <div class="place"><h3><span>01</span>Your Google or Microsoft account</h3><p>Many apps connected through "Sign in with Google" or "Sign in with Microsoft" can be reviewed from these account-level lists. One of the fastest places to start.</p></div>
+    <div class="place"><h3><span>02</span>Your browser</h3><p>Extensions can read pages and act inside sessions you're already signed into. Remove what you don't use.</p></div>
+    <div class="place"><h3><span>03</span>Your automation platform</h3><p>Zapier, Make, Power Automate, n8n. Look hardest at anything that sends, publishes, or changes records.</p></div>
+    <div class="place"><h3><span>04</span>Your AI tools</h3><p>Each one keeps its own connector list — email, calendar, files, CRM, code. Check them individually.</p></div>
+  </div>
+
+  <div class="box">
+    <h4>What this fast pass won't catch</h4>
+    <p>API keys and service accounts, which often have no settings page at all. Anything connected with a username and password instead of a "Sign in with" button — those appear in no third-party list. Tools set up on one person's computer. Integrations enabled inside another vendor's console. Anything an employee connected under a personal account. This is a starting point, not a clean bill of health.</p>
+  </div>
+
+  <h2><span class="n">03</span>For each one, ask</h2>
+  <ol class="q">
+    <li><b>What is it for?</b> <span>If nobody can say why it exists, that's your answer.</span></li>
+    <li><b>What can it read?</b> <span>One folder, or everything?</span></li>
+    <li><b>What can it change?</b> <span>Create, edit, move, delete?</span></li>
+    <li><b>Can it reach the outside world?</b> <span>Email, messages, posting, publishing.</span></li>
+    <li><b>Can it do something expensive or permanent?</b> <span>Deletion, payments, code, production systems.</span></li>
+    <li><b>Where does a person approve?</b> <span>Does it recommend, draft, or just go?</span></li>
+    <li><b>Could you stop it today?</b> <span>Do you know where to click, and where the record of what it did lives?</span></li>
+  </ol>
+
+  <h2 class="brk"><span class="n">04</span>Write it down</h2>
+  <p class="sub">One row per connection. Keep it general — no passwords, no keys, no customer data. You're recording categories of authority, not secrets.</p>
+
+  <table class="ws">
+    <tr>
+      <th style="width:26%">Tool or connection</th>
+      <th style="width:26%">What it's for</th>
+      <th style="width:16%">Level 1–6</th>
+      <th style="width:16%">Person approves?</th>
+      <th style="width:16%">Keep / Reduce / Remove</th>
+    </tr>
+    <tr><td></td><td></td><td></td><td></td><td></td></tr>
+    <tr><td></td><td></td><td></td><td></td><td></td></tr>
+    <tr><td></td><td></td><td></td><td></td><td></td></tr>
+    <tr><td></td><td></td><td></td><td></td><td></td></tr>
+    <tr><td></td><td></td><td></td><td></td><td></td></tr>
+    <tr><td></td><td></td><td></td><td></td><td></td></tr>
+    <tr><td></td><td></td><td></td><td></td><td></td></tr>
+    <tr><td></td><td></td><td></td><td></td><td></td></tr>
+    <tr><td></td><td></td><td></td><td></td><td></td></tr>
+    <tr><td></td><td></td><td></td><td></td><td></td></tr>
+  </table>
+
+  <h2><span class="n">05</span>Red flags</h2>
+  <p class="sub">If any of these are true, deal with them before you do anything else.</p>
+  <ul class="flags">
+    <li>Something has administrator access because that was the easy setting.</li>
+    <li>A tool can email customers without anyone reading it first.</li>
+    <li>Something can delete, publish, buy, or deploy with no approval step.</li>
+    <li>Nobody remembers why a connection exists or who set it up.</li>
+    <li>An automation runs under the owner's personal login.</li>
+    <li>People are adding tools and extensions with no shared list.</li>
+    <li>You can't say how to revoke a tool's access.</li>
+    <li>Nothing is logged, or nobody knows where the logs are.</li>
+  </ul>
+
+  <h2><span class="n">06</span>Then do one thing</h2>
+  <p class="sub">A list nobody acts on is just a list. Before you close this page: remove one connection you no longer use, or take one thing down a level — write instead of send, draft instead of publish. Then put a date on the calendar to do this again. Quarterly is plenty.</p>
+
+  <div class="close">
+    <div>
+      <p class="who">Kevin Butler · Rabbit River Systems</p>
+      <p>If you want a second set of eyes on what you found, or you're not sure what a particular connection can actually do, I'm happy to talk it through. Twenty minutes, phone or video.</p>
+    </div>
+    <div style="font-size:14.5px;line-height:1.8">
+      <a href="https://rabbitriversystems.com/book.html">rabbitriversystems.com/book</a><br>
+      <a href="mailto:kevin@rabbitriversystems.com">kevin@rabbitriversystems.com</a><br>
+      <a href="https://rabbitriversystems.com/access-is-authority.html">The full briefing</a>
+    </div>
+  </div>
+
+  <p class="fine"><b>Access is authority.</b> Don't give AI more authority than the job requires. &nbsp;·&nbsp; This is practical operational guidance, not cybersecurity, legal, or compliance advice. Some situations need a qualified professional. &nbsp;·&nbsp; Menu names were current in September 2026; if one has moved, search that product's help for "connected apps."</p>
+
+</div>
+
+</body>
+</html>
