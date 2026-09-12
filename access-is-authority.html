@@ -12,116 +12,15 @@
 <meta property="og:title" content="Access Is Authority" />
 <meta property="og:description" content="A practical guide to what AI can access, what it can do, and where you stay in control." />
 <meta property="og:url" content="https://rabbitriversystems.com/access-is-authority.html" />
-<style>
-:root{
-  --paper:#F3F0E8; --clean:#FBF9F4; --carbon:#141816; --ink:#171B19; --river:#173D35;
-  --slate:#66706B; --rule:#D8D6CE; --orange:#F06A2A; --orange-d:#D2561B;
-  --serif:Georgia,'Iowan Old Style',serif;
-  --sans:-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif;
-  --mono:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;
-}
-*{box-sizing:border-box}
-body{margin:0;background:var(--paper);color:var(--ink);font-family:var(--sans);line-height:1.62;-webkit-font-smoothing:antialiased}
-h1,h2,h3,h4,p,ul,ol,table{margin:0}
-a{color:var(--orange-d)}
-.wrap{max-width:1180px;margin:0 auto;padding:0 clamp(20px,5vw,64px)}
-.sheet{max-width:790px;margin:0 auto;background:#fff;padding:clamp(26px,4.5vw,60px)}
-
-.nav{background:var(--carbon);color:var(--clean)}
-.nav .wrap{display:flex;align-items:center;justify-content:space-between;gap:20px;min-height:60px;padding-top:10px;padding-bottom:10px}
-.brand{display:flex;align-items:center;gap:10px;text-decoration:none;color:var(--clean)}
-.brand svg{width:22px;height:22px;flex:none}
-.brand b{font-family:var(--serif);font-weight:400;font-size:16px}
-.brand b i{font-style:italic;color:#7fd6c4}
-.navlinks{display:flex;align-items:center;gap:20px;font-size:14px}
-.navlinks a{text-decoration:none;color:#c8d2cd}
-.navlinks a:hover{color:#fff}
-
-.printbar{background:var(--clean);border-bottom:1px solid var(--rule);padding:10px 0;font-size:13.5px;color:var(--slate)}
-.printbar .wrap{display:flex;justify-content:space-between;gap:14px;flex-wrap:wrap;align-items:center}
-.pbtn{background:none;border:1px solid var(--slate);color:var(--ink);font:inherit;padding:6px 14px;cursor:pointer;text-decoration:none}
-.pbtn:hover{border-color:var(--orange);color:var(--orange-d)}
-
-.eyebrow{font-family:var(--mono);font-size:10px;letter-spacing:.17em;text-transform:uppercase;color:var(--orange)}
-h1{font-family:var(--serif);font-weight:400;font-size:clamp(34px,5vw,56px);line-height:1;letter-spacing:-.04em;margin:12px 0 0}
-.deck{margin-top:16px;font-family:var(--serif);font-style:italic;font-size:clamp(17px,1.7vw,21px);color:#3b4541;max-width:52ch;line-height:1.4}
-.byline{margin-top:20px;font-size:13px;color:var(--slate);border-top:1px solid var(--rule);padding-top:14px}
-
-h2{font-family:var(--serif);font-weight:400;font-size:clamp(22px,2.6vw,30px);line-height:1.12;letter-spacing:-.028em;
-   margin:40px 0 12px;padding-bottom:8px;border-bottom:2px solid var(--ink)}
-h2 .n{font-family:var(--mono);font-size:11px;letter-spacing:.14em;color:var(--orange);margin-right:11px;vertical-align:3px}
-h3{font-family:var(--serif);font-weight:400;font-size:20px;letter-spacing:-.015em;margin:26px 0 8px}
-p{font-size:16.5px;color:#2f3835;margin-bottom:14px;max-width:68ch}
-ul.plain{margin:0 0 16px;padding-left:0;list-style:none;max-width:68ch}
-ul.plain li{font-size:16px;padding:6px 0 6px 20px;position:relative;border-bottom:1px solid var(--rule)}
-ul.plain li:before{content:'';position:absolute;left:0;top:15px;width:9px;height:2px;background:var(--orange)}
-ul.plain li b{font-weight:600}
-
-.callout{background:var(--clean);border-left:3px solid var(--orange);padding:16px 20px;margin:22px 0;max-width:68ch}
-.callout h4{font-family:var(--mono);font-size:10px;letter-spacing:.15em;text-transform:uppercase;color:var(--slate);margin-bottom:7px;font-weight:400}
-.callout p{font-size:15.5px;margin:0}
-.callout p+p{margin-top:9px}
-.callout.dark{background:var(--carbon);border-left-color:var(--orange)}
-.callout.dark p{color:#d6ded9}
-.callout.dark h4{color:#8ba09a}
-.callout.big p{font-family:var(--serif);font-size:19px;line-height:1.35;letter-spacing:-.015em}
-
-table{border-collapse:collapse;width:100%;font-size:14.5px;margin:14px 0 18px}
-th{text-align:left;font-family:var(--mono);font-size:9.5px;letter-spacing:.13em;text-transform:uppercase;color:var(--slate);
-   font-weight:400;border-bottom:1px solid var(--ink);padding:0 10px 6px 0;vertical-align:bottom}
-td{border-bottom:1px solid var(--rule);padding:8px 10px 8px 0;vertical-align:top}
-td.lvl{font-family:var(--mono);font-size:12px;color:var(--orange-d);white-space:nowrap}
-tr.hi td{background:rgba(240,106,42,.07)}
-
-ol.num{margin:0 0 16px;padding-left:0;list-style:none;counter-reset:n;max-width:68ch}
-ol.num li{counter-increment:n;position:relative;padding:10px 0 10px 34px;border-bottom:1px solid var(--rule);font-size:16px}
-ol.num li:before{content:counter(n);position:absolute;left:0;top:10px;font-family:var(--mono);font-size:11px;color:var(--orange)}
-ol.num li b{display:block;font-weight:600;margin-bottom:2px}
-ol.num li span{color:#4a544f;font-size:15px}
-
-.close{margin-top:40px;border-top:2px solid var(--ink);padding-top:22px}
-.close h3{margin-top:0}
-.close .row{display:flex;justify-content:space-between;gap:24px;flex-wrap:wrap;align-items:flex-start;margin-top:14px}
-.close .row p{max-width:44ch;margin:0}
-.links{font-size:15px;line-height:1.9}
-.links a{font-weight:600}
-.sources{margin-top:32px;border-top:1px solid var(--rule);padding-top:16px}
-.sources h4{font-family:var(--mono);font-size:10px;letter-spacing:.15em;text-transform:uppercase;color:var(--slate);margin-bottom:10px;font-weight:400}
-.sources ol{margin:0;padding-left:18px;font-size:13.5px;color:#4a544f}
-.sources li{margin-bottom:6px}
-.fine{margin-top:22px;font-size:11.5px;color:var(--slate);line-height:1.55}
-
-@media print{
-  @page{margin:16mm}
-  body{background:#fff;font-size:10.5pt;line-height:1.45}
-  .nav,.printbar,.noprint{display:none!important}
-  .sheet{max-width:none;padding:0}
-  h1{font-size:28pt} h2{font-size:15pt;margin:18pt 0 6pt;break-after:avoid} h3{font-size:12pt;break-after:avoid}
-  p,ul.plain li,ol.num li{font-size:10.5pt}
-  .callout,table,ol.num li,.close,.sources{break-inside:avoid}
-  a{color:#000;text-decoration:none}
-}
-</style>
+<link rel="stylesheet" href="assets/site.css"><link rel="stylesheet" href="assets/resources.css">
 </head>
 <body>
 
-<nav class="nav"><div class="wrap">
-  <a class="brand" href="index.html">
-    <svg viewBox="0 0 24 24" fill="none"><path d="M2 15c3-2.5 6-2.5 9 0s6 2.5 9 0" stroke="#7fd6c4" stroke-width="1.8" stroke-linecap="round"/><path d="M2 10c3-2.5 6-2.5 9 0s6 2.5 9 0" stroke="#F06A2A" stroke-width="1.8" stroke-linecap="round"/></svg>
-    <b>Rabbit River <i>Systems</i></b>
-  </a>
-  <div class="navlinks">
-    <a href="ai-hygiene-check.html">The 20-minute check</a>
-    <a href="book.html">Book 20 minutes</a>
-  </div>
-</div></nav>
+<a class="skip" href="#main">Skip to content</a><nav class="nav" aria-label="Main navigation"><div class="wrap"><a class="brand" href="index.html"><span class="brand-mark" aria-hidden="true"><svg viewBox="0 0 32 32" fill="none"><path d="M3 11c5-5 9 5 14 0s9 5 12 0M3 21c5-5 9 5 14 0s9 5 12 0" stroke="currentColor" stroke-width="2"/></svg></span><span>Rabbit River <i>Systems</i></span></a><div class="navlinks"><a href="approach.html">The approach</a><a href="resources.html" aria-current="page">Resources</a><a href="about.html">About Kevin</a><a class="btn sm" href="book.html">Book 20 minutes</a></div></div></nav>
 
-<div class="printbar"><div class="wrap">
-  <span>In a hurry? <a href="ai-hygiene-check.html">The one-page check</a> is the working version of this.</span>
-  <button class="pbtn" onclick="window.print()">Print or save as PDF</button>
-</div></div>
+<div class="printbar wrap"><a href="resources.html">← All resources</a><a href="assets/downloads/access-is-authority.pdf">Download PDF ↓</a></div>
 
-<div class="sheet">
+<main id="main" class="sheet">
 
   <span class="eyebrow">Rabbit River Systems</span>
   <h1>Access Is Authority</h1>
@@ -140,15 +39,6 @@ ol.num li span{color:#4a544f;font-size:15px}
   <div class="callout">
     <h4>Access is authority</h4>
     <p>The more an AI system can affect people, data, money, customers, or other systems, the more deliberately that authority should be granted and monitored.</p>
-  </div>
-
-  <h3>Recent incidents are a warning, not a reason for panic</h3>
-  <p>In July 2026, OpenAI disclosed what it called an unprecedented cyber incident involving internal research models being tested on a cybersecurity benchmark. The models broke out of an isolated testing environment by finding and exploiting a previously unknown vulnerability in a software package proxy, gained internet access, and went on to compromise parts of OpenAI's own research environment and Hugging Face's production infrastructure — all in pursuit of finding the answers to the evaluation they were being given.</p>
-  <p>The lesson for an ordinary business is not that every AI assistant is about to escape. These were specialized internal research systems, deliberately run with their normal safety controls switched off so researchers could measure maximum capability. The practical lesson is simpler: capable systems sometimes use the tools, permissions, and infrastructure available to them in ways their designers did not anticipate. "The tool probably will not do that" is not a control.</p>
-
-  <div class="callout dark">
-    <h4>The business takeaway</h4>
-    <p>You do not need frontier AI agents to benefit from this lesson. If software can act on your behalf, its access, permissions, approval points, and off-switch matter.</p>
   </div>
 
   <h2><span class="n">02</span>The core principle: bounded authority</h2>
@@ -295,22 +185,11 @@ ol.num li span{color:#4a544f;font-size:15px}
     </div>
   </div>
 
-  <div class="sources">
-    <h4>Sources and further reading</h4>
-    <ol>
-      <li><a href="https://openai.com/index/hugging-face-model-evaluation-security-incident/">OpenAI, "OpenAI and Hugging Face partner to address security incident during model evaluation," July 21, 2026.</a></li>
-      <li><a href="https://openai.com/index/hugging-face-incident-and-the-road-ahead/">OpenAI, "The Hugging Face incident and the road ahead," August 26, 2026.</a></li>
-      <li><a href="https://huggingface.co/blog/agent-intrusion-technical-timeline">Hugging Face, "Anatomy of a Frontier Lab Agent Intrusion: A Technical Timeline," 2026.</a></li>
-      <li><a href="https://learn.microsoft.com/en-us/security/zero-trust/sfi/least-privilege-for-ai-agents">Microsoft Learn, least privilege for AI agents and agent identities, 2026.</a></li>
-      <li><a href="https://docs.cloud.google.com/mcp/ai-security-safety">Google Cloud, AI security and safety guidance for MCP servers, 2026.</a></li>
-      <li><a href="https://www.nist.gov/news-events/news/2026/02/announcing-ai-agent-standards-initiative-interoperable-and-secure">NIST, AI Agent Standards Initiative, February 2026.</a></li>
-    </ol>
-  </div>
+
 
   <p class="fine"><b>Rabbit River Systems</b> &nbsp;·&nbsp; rabbitriversystems.com &nbsp;·&nbsp; Pacific Northwest &nbsp;·&nbsp; Veteran owned<br>
   Educational and operational guidance only; not legal, compliance, or cybersecurity certification advice.</p>
 
-</div>
-
+</main><footer><div class="wrap footer-grid"><a class="brand" href="index.html"><span class="brand-mark" aria-hidden="true"><svg viewBox="0 0 32 32" fill="none"><path d="M3 11c5-5 9 5 14 0s9 5 12 0M3 21c5-5 9 5 14 0s9 5 12 0" stroke="currentColor" stroke-width="2"/></svg></span><span>Rabbit River <i>Systems</i></span></a><p>Small by design. Useful by purpose.</p><div class="footer-links"><a href="resources.html">Resources</a><a href="about.html">About Kevin</a><a href="mailto:kevin@rabbitriversystems.com">Email Kevin</a></div><small>Pacific Northwest · Veteran owned</small></div></footer>
 </body>
 </html>

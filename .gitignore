@@ -2,3 +2,13 @@
 Thumbs.db
 node_modules/
 *.log
+
+# Local review and historical build output
+.review/
+static-layout-pass/
+.next/
+.pnpm-store/
+.vinext/
+.wrangler/
+dist/
+next-env.d.ts
