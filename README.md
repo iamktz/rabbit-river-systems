@@ -12,6 +12,7 @@ The editorial redesign was approved for publication on September 12, 2026. Furth
 - about.html: background and Rabbit River story
 - approach.html: conversation, scope, handoff, boundaries
 - website-clarity-review.html: purchasable Website Clarity and AI Readiness Review
+- website-clarity-self-check.html: free interactive 15-question companion with printable PDF
 - website-diagnostic.html: legacy redirect to the published offer
 - resources.html: AI resources and the four-category, seven-article index
 - book.html: existing Calendly destination and a direct fallback link
