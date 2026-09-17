@@ -2,7 +2,7 @@
 
 This direction supersedes older positioning and speculative product names in DESIGN.md and previous redesign briefs.
 
-Guiding principles, in order: **Wise. Nimble. Fruitful.**
+Guiding principles, in order: **Wise. Nimble. Fruitful.** These guide the work internally; they do not need to be repeated as public website slogans.
 
 Rabbit River Systems remains broader than sales. Sales, Marketing, and AI are visible pillars. Tools & Resources contains usable material; About and the twenty-minute conversation remain accessible.
 
