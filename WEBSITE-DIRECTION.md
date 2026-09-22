@@ -1,4 +1,4 @@
-# Rabbit River website direction — September 21, 2026
+# Rabbit River website direction — September 22, 2026
 
 This is the governing direction for the current website. It supersedes conflicting visual and positioning guidance in DESIGN.md. Preserve the detailed sales philosophy in SALES-DIRECTION.md.
 
@@ -10,7 +10,7 @@ The audience includes owners and teams in small and medium-sized businesses. Avo
 
 ## Visual and interaction system
 
-Use the approved homepage as the reference: cream on green openings, light reading surfaces, straightforward sans-serif type, generous spacing, a compact sticky header, benefit-led navigation, and a native HTML mobile disclosure menu. Keep the site static HTML/CSS and deploy through GitHub to Cloudflare Pages. Do not introduce a framework or a different hosting platform.
+Use the approved homepage as the reference: cream on green openings, light reading surfaces, straightforward sans-serif type, generous spacing, a compact sticky header, a single navigation row (Tools & Resources, About, Let’s Talk), and a native HTML mobile disclosure menu. Keep the site static HTML/CSS and deploy through GitHub to Cloudflare Pages. Do not introduce a framework or a different hosting platform.
 
 Shared homepage navigation styles are in assets/homepage.css. Existing interior layouts use assets/site.css and, for printable guides, assets/resources.css; assets/interior.css aligns those layouts with the homepage. Keep shared header links and labels synchronized across active pages. Historical unlinked versions and redirect-only pages are not redesigned.
 
@@ -28,3 +28,9 @@ Shared homepage navigation styles are in assets/homepage.css. Existing interior 
 Do not invent customer results, testimonials, available products, or guarantees about AI recommendations. A2A is longer-term context, not a claim that a protocol produces search visibility. Keep biographies and jargon out of the primary pitch.
 
 Provide multiple paths: a conversation, free resources, and the existing bounded paid service. The proposed sales booklet remains outside this work.
+
+## Focused homepage, September 22
+
+Open with the SMB customer's core work and the sales, marketing, and technology work needed to support it. Make the three outcomes prominent. Link once to Sales, Marketing, and Technology & AI beneath those outcomes, in that order. Keep the capability links out of the shared top navigation on desktop and mobile.
+
+Use muted warm orange sparingly for reason numbers, small rules, hover states, and CTA details. Preserve cream on green and the simple wordmark. Close with a conversation as the primary action, resources as a secondary link, and a brief experience statement. Keep the biography and process on About/Approach and AI recommendation readiness on Marketing. Do not use em dashes in new homepage copy. Prior homepage copy is retained in the workspace at design-references/homepage-content-before-sept22.html and in Git history.

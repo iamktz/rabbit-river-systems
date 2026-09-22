@@ -1,0 +1,21 @@
+/* Homepage-only refinements. Loaded only by index.html. */
+#rr-home .rr-hero{position:relative;overflow:hidden;padding-block:64px 58px;border-bottom:4px solid #d99870}
+#rr-home .rr-hero> :not(.rr-river-lines){position:relative;z-index:1}
+#rr-home .rr-river-lines{position:absolute;right:max(22px,calc((100% - 1200px)/2));top:18px;width:215px;height:calc(100% - 18px);color:#547366;pointer-events:none}
+#rr-home .rr-hero h1{font-weight:700;line-height:1.12;letter-spacing:-1.9px;max-width:880px}
+#rr-home .rr-opening-line{font-weight:400;color:#e1e9df}
+#rr-home .rr-hero .rr-eyebrow{color:#f0c3a6;letter-spacing:1.8px;margin-bottom:28px}
+#rr-home .rr-hero .rr-eyebrow::before{width:38px;height:3px}
+#rr-home .rr-hero .rr-lead{max-width:730px;margin-top:30px;color:#fafbf8}
+#rr-home .rr-hero .rr-mini-pitch{max-width:720px;margin-top:24px;padding-left:20px;border-left:2px solid #d99870;color:#d6e1d8}
+#rr-home .rr-reasons{padding-block:54px 48px}
+#rr-home .rr-reasons-intro{max-width:780px;line-height:1.3;margin-bottom:36px;text-wrap:balance}
+#rr-home .rr-reason{padding-block:36px}
+#rr-home .rr-reason .rr-number{display:inline-flex;align-items:center;gap:12px;font-weight:700}
+#rr-home .rr-reason .rr-number::before{content:"";width:18px;height:2px;background:currentColor}
+#rr-home .rr-capabilities{padding-top:22px}
+#rr-home .rr-contact{border-top:1px solid #d7e0d9;background:#e8eee6;padding-block:58px 64px}
+#rr-home .rr-contact .rr-eyebrow{color:#875032}
+#rr-home .rr-credibility{border-top:0;border-left:2px solid #a4512d;padding:4px 0 4px 24px}
+@media(max-width:1100px){#rr-home .rr-river-lines{right:-90px;opacity:.65}#rr-home .rr-hero h1{max-width:calc(100% - 60px)}#rr-home .rr-hero .rr-lead,#rr-home .rr-hero .rr-mini-pitch{max-width:calc(100% - 100px)}}
+@media(max-width:720px){#rr-home .rr-hero{padding-block:38px 40px;border-bottom-width:3px}#rr-home .rr-river-lines{display:none}#rr-home .rr-hero h1,#rr-home .rr-hero .rr-lead,#rr-home .rr-hero .rr-mini-pitch{max-width:100%}#rr-home .rr-hero h1{letter-spacing:-1.3px}#rr-home .rr-hero .rr-eyebrow{letter-spacing:1.3px;margin-bottom:24px}#rr-home .rr-hero .rr-eyebrow::before{width:24px}#rr-home .rr-hero .rr-lead{margin-top:26px}#rr-home .rr-hero .rr-mini-pitch{padding-left:16px;margin-top:22px}#rr-home .rr-reasons{padding-block:36px 38px}#rr-home .rr-reasons-intro{margin-bottom:26px}#rr-home .rr-reason{padding-block:28px}#rr-home .rr-contact{padding-block:40px}}
