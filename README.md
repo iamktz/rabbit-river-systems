@@ -2,9 +2,9 @@
 
 Static HTML/CSS website deployed through GitHub to Cloudflare Pages. No build step or framework.
 
-## Draft status
+## Current direction
 
-The editorial redesign was approved for publication on September 12, 2026. Further refinements will follow review of the live site.
+The customer-outcome homepage was published on September 21, 2026. WEBSITE-DIRECTION.md governs the subsequent sitewide alignment. The site remains plain HTML/CSS with separate pages.
 
 ## Pages
 
