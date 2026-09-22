@@ -10,9 +10,13 @@ The audience includes owners and teams in small and medium-sized businesses. Avo
 
 ## Visual and interaction system
 
-Use the approved homepage as the reference: cream on green openings, light reading surfaces, straightforward sans-serif type, generous spacing, a compact sticky header, a single navigation row (Tools & Resources, About, Let’s Talk), and a native HTML mobile disclosure menu. Keep the site static HTML/CSS and deploy through GitHub to Cloudflare Pages. Do not introduce a framework or a different hosting platform.
+Use the approved homepage as the reference: cream on green openings, light reading surfaces, straightforward sans-serif type, generous spacing, a compact sticky header, a single navigation row (Sales, Marketing, Tech & AI, Tools & Resources, About, Let’s Talk), and a native HTML mobile disclosure menu. Keep the site static HTML/CSS and deploy through GitHub to Cloudflare Pages. Do not introduce a framework or a different hosting platform.
 
-Shared homepage navigation styles are in assets/homepage.css. Existing interior layouts use assets/site.css and, for printable guides, assets/resources.css; assets/interior.css aligns those layouts with the homepage. Keep shared header links and labels synchronized across active pages. Historical unlinked versions and redirect-only pages are not redesigned.
+The active site uses assets/design-system.css for shared visual tokens, navigation, typography, components, footer, and service hero styles. Interior grids and page-specific layout patterns are in assets/page-layouts.css. Printable guides also use assets/resources.css. The approved homepage composition and river crop remain in assets/homepage-detail.css. Keep shared header links and labels synchronized across active pages. The original homepage.css, interior.css, and site.css are retained for historical reference but are not loaded by active pages. Historical unlinked versions and redirect-only pages are not redesigned.
+
+Use the supplied hero images directly: sales-hero-approved.png for Sales, marketing-hero-approved.png for Marketing, and tech-ai-hero-approved.png for Technology & AI. Use cover cropping and leftward positioning at smaller widths to keep the artwork away from the copy. river-hero-approved.png is unique to the homepage. About, Approach, Booking, Resources, diagnostics, guides, and offer pages remain text-led; About uses a modest headshot. Do not generate or reinterpret replacement imagery.
+
+Use Arial/Helvetica consistently. Shared colors are cream #fafbf8, dark green #173b32, body copy #465c52, and warm orange #a4512d, with #d99870 for accents against dark surfaces. Content width is 1200px including responsive gutters; long-form reading width is 860px including gutters. Keep orange to small rules, markers, links, and button details. Service heroes share a responsive heading scale and a minimum desktop height, growing when content requires it. All published copy remains intact apart from replacing em dashes with appropriate punctuation.
 
 ## Content boundaries
 
@@ -31,6 +35,6 @@ Provide multiple paths: a conversation, free resources, and the existing bounded
 
 ## Focused homepage, September 22
 
-Open with the SMB customer's core work and the sales, marketing, and technology work needed to support it. Make the three outcomes prominent. Link once to Sales, Marketing, and Technology & AI beneath those outcomes, in that order. Keep the capability links out of the shared top navigation on desktop and mobile.
+Open with the SMB customer's core work and the sales, marketing, and technology work needed to support it. Make the three outcomes prominent. Link once to Sales, Marketing, and Tech & AI beneath those outcomes, in that order. Use short capability labels in the single primary navigation row and mobile disclosure. Do not restore the second benefit-label navigation row.
 
 Use muted warm orange sparingly for reason numbers, small rules, hover states, and CTA details. Preserve cream on green and the simple wordmark. Close with a conversation as the primary action, resources as a secondary link, and a brief experience statement. Keep the biography and process on About/Approach and AI recommendation readiness on Marketing. Do not use em dashes in new homepage copy. Prior homepage copy is retained in the workspace at design-references/homepage-content-before-sept22.html and in Git history.
