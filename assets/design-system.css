@@ -177,7 +177,7 @@ html{color-scheme:light;scroll-padding-top:84px}
 
 /* Approved service images remain CSS backgrounds behind real HTML content. */
 #rr-refined.rr-interior .service-hero{background-size:cover;background-position:center;background-repeat:no-repeat;min-height:460px;display:flex;flex-direction:column;justify-content:center;padding-block:60px}
-#rr-refined.rr-interior .service-hero--sales{background-image:url('/assets/sales-hero-approved.png');background-position:center 45%}
+#rr-refined.rr-interior .service-hero--sales{background-image:url('/assets/sales-hero-approved-v2.png');background-position:center 45%}
 #rr-refined.rr-interior .service-hero--marketing{background-image:url('/assets/marketing-hero-approved.png')}
 #rr-refined.rr-interior .service-hero--tech-ai{background-image:url('/assets/tech-ai-hero-approved.png')}
 #rr-refined.rr-interior .service-hero h1{max-width:660px}
