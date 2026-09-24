@@ -2,3 +2,6 @@
 /website-diagnostic /website-clarity-review 301
 /website-diagnostic.html /website-clarity-review 301
 /website-clarity-review.html /website-clarity-review 301
+
+/tech-ai /ai-transformation 301
+/tech-ai/* /ai-transformation/:splat 301
