@@ -56,10 +56,10 @@
 @media(max-width:480px){#rr-refined.rr-solutions .solution-flow{grid-template-columns:1fr}#rr-refined.rr-solutions .solution-flow li+li{border-left:0;padding-left:0}#rr-refined.rr-solutions .solution-flow h3{justify-content:flex-start;gap:24px}}
 
 #rr-refined.section-marketing{--solution-hero-image:url('/assets/marketing-hero-approved.png')}
-#rr-refined.section-marketing .marketing-framing{padding-block:32px 24px}
-#rr-refined.section-marketing .marketing-framing h2{font-size:26px}
+#rr-refined.section-marketing .marketing-framing,#rr-refined.section-tech .solution-framing{padding-block:32px 24px}
+#rr-refined.section-marketing .marketing-framing h2,#rr-refined.section-tech .solution-framing h2{font-size:26px}
 #rr-refined.section-marketing .marketing-principle .solution-measure:first-of-type{font-size:22px;line-height:1.5;color:var(--ink)}
-#rr-refined.section-marketing :is(.solution-callout,.solution-sequence)+.solution-measure{margin-top:24px}
+#rr-refined:is(.section-marketing,.section-tech) :is(.solution-callout,.solution-sequence)+.solution-measure{margin-top:24px}
 #rr-refined.section-marketing .marketing-proof-link{display:inline-flex;align-items:center;min-height:44px;margin-top:18px}
 #rr-refined.section-marketing .marketing-principle .small{margin-top:8px;font-size:13px}
 #rr-refined.section-tech{--solution-hero-image:url('/assets/tech-ai-hero-approved.png')}
