@@ -17,23 +17,6 @@
 #rr-home a.rr-door:hover{background:#245344;border-color:#245344;border-top-color:#f0c3a6}
 #rr-home a.rr-door:focus-visible{outline:3px solid #a4512d;outline-offset:5px}
 #rr-home a.rr-door:hover .rr-door-cta,#rr-home a.rr-door:focus-visible .rr-door-cta{color:#f0c3a6}
-#rr-home .rr-positioning{display:grid;grid-template-columns:1fr 1fr;align-items:center;gap:48px;padding-block:36px 44px;border-top:1px solid var(--rr-rule)}
-#rr-home .rr-positioning h2{font-size:30px;line-height:1.2;letter-spacing:-.7px}
-#rr-home .rr-positioning p{font-size:16px;color:var(--rr-copy);max-width:54ch}
-#rr-home .rr-work-block{padding-block:44px;background:var(--rr-soft);border-block:1px solid var(--rr-rule)}
-#rr-home .rr-work-block-grid{display:grid;grid-template-columns:1.25fr 1fr;gap:64px;align-items:center}
-#rr-home .rr-work-block .rr-eyebrow{color:#875032;margin-bottom:16px}
-#rr-home .rr-work-block h2{font-size:34px;letter-spacing:-1px}
-#rr-home .rr-work-block-copy{font-size:16px;max-width:52ch;color:var(--rr-copy);margin-top:18px}
-#rr-home .rr-work-block .rr-text-link{display:inline-flex;align-items:center;gap:12px;min-height:44px;margin-top:16px}
-#rr-home .rr-work-block-principle{font-size:clamp(28px,3.2vw,38px);font-weight:700;letter-spacing:-1px;line-height:1.3;border-left:3px solid #a4512d;padding-left:32px}
-#rr-home .rr-work-block-principle span{display:block}
-#rr-home .rr-practical{padding-block:44px}
-#rr-home .rr-practical h2{font-size:30px}
-#rr-home .rr-practical-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:28px;margin-top:26px}
-#rr-home .rr-practical-grid>div{border-top:1px solid var(--rr-rule);padding-top:18px}
-#rr-home .rr-practical-grid h3{font-size:21px;margin-bottom:12px}
-#rr-home .rr-practical-grid p{font-size:15px;line-height:1.65;color:var(--rr-copy)}
 #rr-home .rr-home-trust{display:grid;grid-template-columns:1fr 1fr;gap:48px;align-items:center;border-top:1px solid var(--rr-rule);padding-block:32px 40px}
 #rr-home .rr-home-trust h2{font-size:24px;letter-spacing:-.5px}
 #rr-home .rr-home-trust .rr-text-link{display:inline-flex;align-items:center;gap:12px;min-height:44px;margin-top:10px}
@@ -44,6 +27,7 @@
 #rr-home .rr-home-close p{max-width:64ch;font-size:16px;color:var(--rr-copy);margin-top:18px}
 #rr-home .rr-home-close .rr-button{margin:0;border-bottom:3px solid #d99870}
 #rr-home .rr-home-close .rr-button:hover{background:#245344}
-@media(min-width:721px) and (max-width:1100px){#rr-home .rr-doors{gap:16px}#rr-home a.rr-door{padding:24px 18px 20px}#rr-home .rr-door h3{font-size:25px}#rr-home .rr-work-block-grid{gap:40px}}
-@media(max-width:720px){#rr-refined #rr-home .site-hero{min-height:400px;padding-block:32px}#rr-refined #rr-home .site-hero__content{grid-template-rows:auto auto auto 44px;gap:16px}#rr-home .rr-router{padding-block:28px 32px}#rr-home .rr-router h2{font-size:28px;margin-bottom:20px}#rr-home .rr-doors{grid-template-columns:1fr;gap:16px}#rr-home a.rr-door{min-height:0;padding:22px 24px 16px}#rr-home .rr-door-label{margin-bottom:12px}#rr-home .rr-door h3{font-size:28px;max-width:24ch;margin-bottom:12px}#rr-home .rr-door p{margin-bottom:18px}#rr-home .rr-door-cta{padding-top:10px}#rr-home .rr-positioning,#rr-home .rr-work-block-grid,#rr-home .rr-practical-grid,#rr-home .rr-home-trust,#rr-home .rr-home-close{grid-template-columns:1fr;gap:24px}#rr-home .rr-positioning,#rr-home .rr-practical,#rr-home .rr-home-trust{padding-block:32px}#rr-home .rr-work-block,#rr-home .rr-contact{padding-block:36px}#rr-home .rr-positioning h2,#rr-home .rr-work-block h2,#rr-home .rr-home-close h2{font-size:30px}#rr-home .rr-work-block-principle{font-size:30px;padding-left:22px}#rr-home .rr-practical-grid{gap:20px;margin-top:22px}#rr-home .rr-home-trust{gap:14px}#rr-home .rr-home-close .rr-button{justify-self:start}}
-@media print{#rr-refined #rr-home .site-hero{min-height:0;padding-block:20px}#rr-refined #rr-home .site-hero__content{display:block}#rr-refined #rr-home .site-hero .site-hero__intro{margin-block:16px}#rr-home a.rr-door{background:white;color:#173b32;min-height:0;break-inside:avoid}#rr-home .rr-door-label,#rr-home .rr-door p,#rr-home .rr-door-cta>span{color:#173b32}#rr-home .rr-work-block,#rr-home .rr-contact{background:white}#rr-home .rr-router,#rr-home .rr-positioning,#rr-home .rr-work-block,#rr-home .rr-practical,#rr-home .rr-home-trust,#rr-home .rr-contact{padding-block:20px}}
+@media(min-width:721px) and (max-width:1100px){#rr-home .rr-doors{gap:16px}#rr-home a.rr-door{padding:24px 18px 20px}#rr-home .rr-door h3{font-size:25px}}
+@media(max-width:720px){#rr-refined #rr-home .site-hero{min-height:400px;padding-block:32px}#rr-refined #rr-home .site-hero__content{grid-template-rows:auto auto auto 44px;gap:16px}#rr-home .rr-router{padding-block:28px 32px}#rr-home .rr-router h2{font-size:28px;margin-bottom:20px}#rr-home .rr-doors{grid-template-columns:1fr;gap:16px}#rr-home a.rr-door{min-height:0;padding:22px 24px 16px}#rr-home .rr-door-label{margin-bottom:12px}#rr-home .rr-door h3{font-size:28px;max-width:24ch;margin-bottom:12px}#rr-home .rr-door p{margin-bottom:18px}#rr-home .rr-door-cta{padding-top:10px}#rr-home .rr-home-trust,#rr-home .rr-home-close{grid-template-columns:1fr;gap:24px}#rr-home .rr-home-trust{padding-block:32px}#rr-home .rr-contact{padding-block:36px}#rr-home .rr-home-close h2{font-size:30px}#rr-home .rr-home-trust{gap:14px}#rr-home .rr-home-close .rr-button{justify-self:start}}
+@media print{#rr-refined #rr-home .site-hero{min-height:0;padding-block:20px}#rr-refined #rr-home .site-hero__content{display:block}#rr-refined #rr-home .site-hero .site-hero__intro{margin-block:16px}#rr-home a.rr-door{background:white;color:#173b32;min-height:0;break-inside:avoid}#rr-home .rr-door-label,#rr-home .rr-door p,#rr-home .rr-door-cta>span{color:#173b32}#rr-home .rr-contact{background:white}#rr-home .rr-router,#rr-home .rr-positioning,#rr-home .rr-practical,#rr-home .rr-home-trust,#rr-home .rr-contact{padding-block:20px}}
+#rr-home .rr-home-close .rr-eyebrow{font-size:11px;line-height:1.5;letter-spacing:1.5px;color:#875032;margin:0 0 16px}
