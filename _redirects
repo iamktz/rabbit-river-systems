@@ -5,3 +5,9 @@
 
 /tech-ai /ai-transformation 301
 /tech-ai/* /ai-transformation/:splat 301
+
+# Prospect 25 product and legacy prospecting links
+/prospect-25.html /prospect-25 301
+/sales/fill-the-funnel /prospect-25 301
+/sales/fill-the-funnel.html /prospect-25 301
+/sales/fill-the-funnel/ /prospect-25 301

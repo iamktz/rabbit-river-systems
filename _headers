@@ -10,6 +10,8 @@
   Cache-Control: public, max-age=3600
 /assets/downloads/website-clarity-ai-readiness-self-check.pdf
   Cache-Control: public, max-age=3600
+/assets/downloads/Rabbit_River_Prospect_25_Sample_Report.pdf
+  Cache-Control: public, max-age=3600
 /index-old.html
   X-Robots-Tag: noindex, nofollow
 /v2.html

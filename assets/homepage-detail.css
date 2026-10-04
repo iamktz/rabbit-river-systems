@@ -1,8 +1,8 @@
 /* Homepage-only layout. Shared heroes, artwork and other pages stay unchanged. */
 #rr-refined #rr-home .site-hero{min-height:440px;align-items:flex-start;padding-block:40px}
-#rr-refined #rr-home .site-hero__content{display:grid;grid-template-rows:18px minmax(168px,auto) minmax(60px,auto) 44px;gap:14px}
+#rr-refined #rr-home .site-hero__content{display:grid;grid-template-rows:auto auto auto auto;gap:16px}
 #rr-refined #rr-home .site-hero .site-hero__eyebrow,#rr-refined #rr-home .site-hero .site-hero__intro,#rr-refined #rr-home .site-hero .site-hero__action{margin:0}
-#rr-refined #rr-home .site-hero h1{align-self:start;text-wrap:initial}
+#rr-refined #rr-home .site-hero h1{align-self:start;text-wrap:balance}
 #rr-refined #rr-home .site-hero h1 span{display:block}
 #rr-refined #rr-home .site-hero .site-hero__action{justify-self:start;align-self:end}
 #rr-home .rr-router{padding-block:36px 44px}
@@ -28,6 +28,6 @@
 #rr-home .rr-home-close .rr-button{margin:0;border-bottom:3px solid #d99870}
 #rr-home .rr-home-close .rr-button:hover{background:#245344}
 @media(min-width:721px) and (max-width:1100px){#rr-home .rr-doors{gap:16px}#rr-home a.rr-door{padding:24px 18px 20px}#rr-home .rr-door h3{font-size:25px}}
-@media(max-width:720px){#rr-refined #rr-home .site-hero{min-height:400px;padding-block:32px}#rr-refined #rr-home .site-hero__content{grid-template-rows:auto auto auto 44px;gap:16px}#rr-home .rr-router{padding-block:28px 32px}#rr-home .rr-router h2{font-size:28px;margin-bottom:20px}#rr-home .rr-doors{grid-template-columns:1fr;gap:16px}#rr-home a.rr-door{min-height:0;padding:22px 24px 16px}#rr-home .rr-door-label{margin-bottom:12px}#rr-home .rr-door h3{font-size:28px;max-width:24ch;margin-bottom:12px}#rr-home .rr-door p{margin-bottom:18px}#rr-home .rr-door-cta{padding-top:10px}#rr-home .rr-home-trust,#rr-home .rr-home-close{grid-template-columns:1fr;gap:24px}#rr-home .rr-home-trust{padding-block:32px}#rr-home .rr-contact{padding-block:36px}#rr-home .rr-home-close h2{font-size:30px}#rr-home .rr-home-trust{gap:14px}#rr-home .rr-home-close .rr-button{justify-self:start}}
+@media(max-width:720px){#rr-refined #rr-home .site-hero{min-height:400px;padding-block:32px}#rr-refined #rr-home .site-hero__content{grid-template-rows:auto auto auto auto;gap:16px}#rr-home .rr-router{padding-block:28px 32px}#rr-home .rr-router h2{font-size:28px;margin-bottom:20px}#rr-home .rr-doors{grid-template-columns:1fr;gap:16px}#rr-home a.rr-door{min-height:0;padding:22px 24px 16px}#rr-home .rr-door-label{margin-bottom:12px}#rr-home .rr-door h3{font-size:28px;max-width:24ch;margin-bottom:12px}#rr-home .rr-door p{margin-bottom:18px}#rr-home .rr-door-cta{padding-top:10px}#rr-home .rr-home-trust,#rr-home .rr-home-close{grid-template-columns:1fr;gap:24px}#rr-home .rr-home-trust{padding-block:32px}#rr-home .rr-contact{padding-block:36px}#rr-home .rr-home-close h2{font-size:30px}#rr-home .rr-home-trust{gap:14px}#rr-home .rr-home-close .rr-button{justify-self:start}}
 @media print{#rr-refined #rr-home .site-hero{min-height:0;padding-block:20px}#rr-refined #rr-home .site-hero__content{display:block}#rr-refined #rr-home .site-hero .site-hero__intro{margin-block:16px}#rr-home a.rr-door{background:white;color:#173b32;min-height:0;break-inside:avoid}#rr-home .rr-door-label,#rr-home .rr-door p,#rr-home .rr-door-cta>span{color:#173b32}#rr-home .rr-contact{background:white}#rr-home .rr-router,#rr-home .rr-positioning,#rr-home .rr-practical,#rr-home .rr-home-trust,#rr-home .rr-contact{padding-block:20px}}
 #rr-home .rr-home-close .rr-eyebrow{font-size:11px;line-height:1.5;letter-spacing:1.5px;color:#875032;margin:0 0 16px}
