@@ -2,15 +2,13 @@
 
 Static HTML/CSS website deployed through GitHub to Cloudflare Pages. No build step or framework.
 
-## Prospect 25 market test, October 3, 2026
+## Product retirement, October 25, 2026
 
-The homepage now positions Rabbit River around practical products and systems for owner-led commercial service businesses. Prospect 25 is the first product, with independent commercial cleaning and janitorial companies pursuing recurring commercial accounts as the founding pilot. Sales, Marketing, and Tech & AI remain the broader architecture.
+Kevin retired the Prospect 25 offer. Its sitewide navigation and footer promotions, homepage campaign, sales-page offer, pricing, checkout script, sample download and sitemap entry have been removed. The old offer and sample-report URLs redirect to `/sales`; static fallback pages also point there.
 
-- `prospect-25.html` serves `/prospect-25`; `_redirects` permanently sends the old `/sales/fill-the-funnel` URLs to it.
-- The supplied sample is preserved verbatim at `assets/downloads/Rabbit_River_Prospect_25_Sample_Report.pdf` and linked directly for native browser viewing/download.
-- Set the three `STAN_CHECKOUT_URLS` values in `assets/prospect-25-checkout.js` when real checkout URLs exist. Null values leave the honest “Coming shortly” disabled buttons. Only valid HTTPS URLs enable links; no checkout infrastructure is built here.
-- Launch prices are displayed in the three cards in `prospect-25.html`: $29, $295, and $595.
-- This update is local and has not been published or deployed.
+The primary website invitation is a conversation about a sales, marketing or technology problem. General prospecting help remains available from Sales. The shared prospecting engine, project history and digital products pyramid are preserved outside the public website. Retirement of this offer does not authorize resuming SaaS Lite.
+
+Original public offer assets and changed-file snapshots are preserved under `Archive/Website/` outside the public website directory. This record describes local source changes; deployment is verified separately.
 
 ## Current direction
 

@@ -38,3 +38,7 @@ Provide multiple paths: a conversation, free resources, and the existing bounded
 Open with the SMB customer's core work and the sales, marketing, and technology work needed to support it. Make the three outcomes prominent. Link once to Sales, Marketing, and Tech & AI beneath those outcomes, in that order. Use short capability labels in the single primary navigation row and mobile disclosure. Do not restore the second benefit-label navigation row.
 
 Use muted warm orange sparingly for reason numbers, small rules, hover states, and CTA details. Preserve cream on green and the simple wordmark. Close with a conversation as the primary action, resources as a secondary link, and a brief experience statement. Keep the biography and process on About/Approach and AI recommendation readiness on Marketing. Do not use em dashes in new homepage copy. Prior homepage copy is retained in the workspace at design-references/homepage-content-before-sept22.html and in Git history.
+
+## Prospect 25 retirement, October 25, 2026
+
+Kevin retired Prospect 25 and requested its removal from the website. Remove the product campaign and its purchase/sample paths; old URLs lead to Sales. Preserve general prospecting, preparation, outreach and follow-up guidance. Lead with practical help for SMB sales, marketing and technology problems and a scoped conversation as the next action. This retirement supersedes the October 3 product campaign and does not change the digital products pyramid or remove the reusable prospecting engine.

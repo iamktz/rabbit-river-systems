@@ -1,0 +1,13 @@
+/* Homepage positioning and principles using the established site components. */
+#rr-refined .rr-hero-actions{display:flex;flex-wrap:wrap;align-items:center;gap:4px 28px}
+#rr-refined .rr-principles{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:32px;margin-top:28px}
+#rr-refined .rr-principles>div{min-width:0;border-top:1px solid var(--rr-rule);padding-top:20px}
+#rr-refined .rr-principles h3{font-size:25px;margin-bottom:12px}
+#rr-refined .rr-principles p{font-size:16px;color:var(--rr-copy)}
+#rr-home .rr-positioning,#rr-home .rr-practical{padding-block:40px;border-bottom:1px solid var(--rr-rule)}
+#rr-home .rr-positioning h2{max-width:830px;font-size:32px}
+#rr-home .rr-positioning p{max-width:820px;margin-top:20px;color:var(--rr-copy)}
+#rr-home .rr-positioning .rr-text-link{min-height:44px;display:inline-flex;align-items:center;gap:16px;margin-top:12px}
+#rr-home .rr-practical h2{font-size:32px}
+#rr-home .rr-principles-note{margin-top:24px;font-size:14px;color:var(--rr-copy)}
+@media(max-width:720px){#rr-refined .rr-principles{grid-template-columns:1fr}#rr-home .rr-positioning,#rr-home .rr-practical{padding-block:32px}#rr-home .rr-positioning h2,#rr-home .rr-practical h2{font-size:28px}}

@@ -6,8 +6,11 @@
 /tech-ai /ai-transformation 301
 /tech-ai/* /ai-transformation/:splat 301
 
-# Prospect 25 product and legacy prospecting links
-/prospect-25.html /prospect-25 301
-/sales/fill-the-funnel /prospect-25 301
-/sales/fill-the-funnel.html /prospect-25 301
-/sales/fill-the-funnel/ /prospect-25 301
+# Retired offer and legacy prospecting URLs
+/prospect-25 /sales 301
+/prospect-25.html /sales 301
+/prospect-25/ /sales 301
+/sales/fill-the-funnel /sales 301
+/sales/fill-the-funnel.html /sales 301
+/sales/fill-the-funnel/ /sales 301
+/assets/downloads/Rabbit_River_Prospect_25_Sample_Report.pdf /sales 301
